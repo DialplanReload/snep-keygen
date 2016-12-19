@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# keygen.sh - Programa feito para criar senhas aleatorias para ramais do Snep
+#
+# Autor: Anderson Freitas <tmsi.freitas@gmail.com>
+# Site: http://www.dialplanreload.com/
+# Repositorio: https://github.com/DialplanReload/snep-keygen
+#
+# Desenvolvido sob licensa GPL. 
+# Fique a vontade para contribuir com a evolucao deste programa.
+#
+#-----------------------------------------------------------------------------------------------
+#
+# OPCOES DE EXECUCAO - NAO ALTERE!!
+#
+#
+# Execucao simples - ./keygen.sh e execucao com -h
+#
+# Este script tem como objetivo os seguintes:
+# * Gerar senha aleatoria para serem inseridas dentro do Snep
+
