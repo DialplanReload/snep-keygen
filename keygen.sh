@@ -90,11 +90,11 @@ source info.conf
 
                                           read version
 
-                                              if [ "$version" == "3"] ; then 
+                                              if [ "$version" == "3" ] ; then 
                                                      $path_mysql -u$db_user -p$db_pass snep < peers_passwd.sql -v
                                               fi
 
-                                              if [ "$version" == "1"] ; then
+                                              if [ "$version" == "1" ] ; then
                                                      $path_mysql -u$db_user -p$db_pass snep25 < peers_passwd.sql -v
                                               fi
 
@@ -135,11 +135,11 @@ source info.conf
 
                                           read version
                                               
-                                              if [ "$version" == "3"] ; then
+                                              if [ "$version" == "3" ] ; then
                                                      $path_mysql -u$db_user -p$db_pass snep < peers_passwd.sql -v
                                               fi
 
-                                              if [ "$version" == "1"] ; then
+                                              if [ "$version" == "1" ] ; then
                                                      $path_mysql -u$db_user -p$db_pass snep25 < peers_passwd.sql -v
                                               fi
 

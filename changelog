@@ -13,10 +13,18 @@
 #          Contribuicoes: Anderson Freitas | Data: 19 Dez 2016
 ##################################################################################################
 #
-# Versao 1.2
+# Versao 1.1
 #
 # * INSERT direto no banco
 # * Interacao com o usuario para saber o nome do banco (snep 1 / snep 3)
 #
 #          Contribuicoes: Anderson Freitas | Data 13 Dez 2016
 ##################################################################################################
+#
+# Versao 1.2
+#
+# * Correcao do bug nas linhas 93,97,138 e 142 - Faltava um espaco antes de fechar o colchete.
+#
+#          Contribuicoes: Anderson Freitas | Data 13 Dez 2016
+##################################################################################################
+
