@@ -1,0 +1,22 @@
+##################################################################################################
+#
+# ********************** C H A N G E L O G
+#
+##################################################################################################
+#
+# Versao 1.0
+#
+# * Gerar senhas aleatorias para ramais do snep
+# * Senhas para um range ou conjunto de ramais
+# * Arquivo SQL com os updates
+#
+#          Contribuicoes: Anderson Freitas | Data: 19 Dez 2016
+##################################################################################################
+#
+# Versao 1.2
+#
+# * INSERT direto no banco
+# * Interacao com o usuario para saber o nome do banco (snep 1 / snep 3)
+#
+#          Contribuicoes: Anderson Freitas | Data 13 Dez 2016
+##################################################################################################

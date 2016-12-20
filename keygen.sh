@@ -82,9 +82,24 @@ source info.conf
                                           )
 
                                           echo $genpass | tr '|' '\n' > peers_passwd.sql
-                                          echo -en "Feito!! Dentro ddo arquivo $path_pwd/peers_passwd.sql estão todos os inserts dos ramais.\n"
-                                          echo "Necessario entrar no MySQL e colar as instrucoes do arquivo!"
-                                          echo "Depois de inserir no MySQL, nãao esqueca de entrar nao Menu Cadastro de ramais e editar um ramal qualquer"
+                                          echo ""
+                                          echo "Qual a versao do Seu Snep?"
+                                          echo "Digite 3 para as versoes 3.X"
+                                          echo "Digite 1 para as versoes 1.X"
+                                          echo ""
+
+                                          read version
+
+                                              if [ "$version" == "3"] ; then 
+                                                     $path_mysql -u$db_user -p$db_pass snep < peers_passwd.sql -v
+                                              fi
+
+                                              if [ "$version" == "1"] ; then
+                                                     $path_mysql -u$db_user -p$db_pass snep25 < peers_passwd.sql -v
+                                              fi
+
+                                          echo -en "Feito!!"
+                                          echo "Agora, so entrar no Menu Cadastro de ramais e editar um ramal qualquer"
                                           echo "e salva-lo, para que o Snep valide as configuracoes"
                                           echo ""
                                           $path_rm peers.tmp
@@ -113,11 +128,26 @@ source info.conf
 
                                           echo $genpass_int | tr '|' '\n' > peers_passwd.sql
                                           echo ""
-                                          echo "Feito!! Dentro ddo arquivo peers_passwd.sql estão todos os inserts dos ramais."
-                                          echo "Necessario entrar no MySQL e colar as instrucoes do arquivo!"
-                                          echo "Depois de inserir no MySQL, nãao esqueca de entrar nao Menu Cadastro de ramais e editar um ramal qualquer"
+                                          echo "Qual a versao do Seu Snep?"
+                                          echo "Digite 3 para as versoes 3.X"
+                                          echo "Digite 1 para as versoes 1.X"
+                                          echo ""
+
+                                          read version
+                                              
+                                              if [ "$version" == "3"] ; then
+                                                     $path_mysql -u$db_user -p$db_pass snep < peers_passwd.sql -v
+                                              fi
+
+                                              if [ "$version" == "1"] ; then
+                                                     $path_mysql -u$db_user -p$db_pass snep25 < peers_passwd.sql -v
+                                              fi
+
+                                          echo -en "Feito!!"
+                                          echo "Agora, so entrar no Menu Cadastro de ramais e editar um ramal qualquer"
                                           echo "e salva-lo, para que o Snep valide as configuracoes"
                                           echo ""
+
                                           $path_rm int_peers.tmp int_peers_ok.tmp
                                fi
 
